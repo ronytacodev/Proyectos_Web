@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hércules entre libros</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #5ab7f5;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(190, 228, 253);
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 80%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(208, 211, 250);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Note -->
+<div style="background:rgb(208, 162, 214);padding:5px">
+  <h4 style="text-align:center">"Un buen libro no termina, se esconde dentro de nosotros."</h4>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <h1>Libros por doquier</h1>
+  <p>El maravilloso mundo de la <b>lectura</b></p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#">Inicio</a>
+  <a href="#">Reseñas</a>
+  <a href="#">Autores</a>
+  <a href="#">Frases</a>
+  <a href="#">Contacto</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>Una pizca de quién soy</h2>
+    <h5>Rony Taco Cardenas</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Desarrollador web con gusto por la lectura y ganas de reseñar libros</p>
+    <h3>Recomendaciones de Lectura</h3>
+    <p>Libros para aprovechar en tu tiempo libre</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2><i>La ladrona de libros</i></h2>
+    <h5>Autor Markus Zusak, Junio 12, 2022</h5>
+    <div class="fakeimg" style="height:200px;"><img src="laLadronaDeLibros.jpg" alt="La ladrona de libros"></div>
+    <p>La primera peculiaridad de esta novela es su narrador, mejor dicho, su narradora: la Muerte.
+      Ella es la que nos cuenta en primera persona la historia de Liessel, una niña alemana que
+      descubre durante la segunda guerra mundial el placer de la lectura y el horror de la guerra.
+      Sé lo que estás pensando: “¡Oh, no! Otra novela sobre el tema del Holocausto”. Y es que parece que este tema, a nivel
+      literario al menos, vuelve a estar de “moda”.
+      Pero, aunque trate este tema habitual, lo hace desde una perspectiva peculiar.</p>
+    <p>A diferencia del “Niño del pijama”, la “ladrona” cuenta los horrores de aquellos que vivieron
+      la segunda guerra mundial como ciudadanos normales que trataban, en la medida de lo posible,
+      de seguir con sus vidas mientras lejos se desarrollaban unos acontecimientos drámaticos.
+      Ése es el caso de la familia de acogida a la que llega Liessel. Una serie de personajes
+      entrañables pueblan las páginas de esta novela: Rudy, el niño con el que Liessel entabla una gran
+      amistad, que está obsesionado con Jesse Owens; Max, el ex-púgil judío que permanece escondido
+      en el sótano; Hans, el pintor de brocha gorda y músico aficionado que ejerce como padre de Liessel;
+      Rosa, la madre de acogida perpetuamente enfadada; la mujer del alcalde, y un largo etcétera,
+      en el que destaca por encima de todos Liessel, la niña protagonista, rebautizada como
+      la “ladrona de libros”. En esta novela encontramos el amor por la
+      lectura (y también por la escritura) que el autor siente y que nos transmite a través de su
+      protagonista, esa niña que recoge todos los libros que encuentra y que convierte en sus
+      posesiones más preciadas. La lectura de esos libros tendrá un poder
+      positivo sobre ella y sobre otros habitantes de la pequeña población.</p>
+      <p>Con una narración ágil, a veces cortante y seca -como no podía ser menos, tratándose de
+        la Muerte-, y otras veces, poética, Markus Zusak usa el recurso del flash-forward, que al
+        contrario que el flash-back (que nos muestra hechos transcurridos en el pasado), nos muestra
+        un futuro que todavía no ha sucedido, amparándose en los conocimientos venideros que tiene
+        esta narradora excepcional. Este detalle puede molestar a algunos lectores, por el destripe
+        de información, igual que otro recurso habitual: los incisos que efectúa cada dos por tres
+        la narradora escritos en una tipografía distinta. Aunque al principio se hacen raros, rápidamente
+        el lector se habitúa a estos incisos y comprende que forman parte de la manera en que está
+        narrada esta historia.
+        Y si llegan al final, ten pañuelos a mano, porque “la ladrona” les robará el corazón.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <h2>Website creado por Rony Taco Cardenas</h2>
+</div>
+
+</body>
+</html>
