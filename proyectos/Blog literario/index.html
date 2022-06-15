@@ -1,90 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Hércules entre libros</title>
+<title>Multiverso Literario</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-/* Style the body */
-body {
-  font-family: Arial;
-  margin: 0;
-}
-
-/* Header/logo Title */
-.header {
-  padding: 60px;
-  text-align: center;
-  background: #5ab7f5;
-  color: white;
-}
-
-/* Style the top navigation bar */
-.navbar {
-  display: flex;
-  background-color: #333;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: rgb(190, 228, 253);
-  color: black;
-}
-
-/* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Main column */
-.main {
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 80%;
-  padding: 20px;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: rgb(208, 211, 250);
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row, .navbar {   
-    flex-direction: column;
-  }
-}
-</style>
+<link rel="stylesheet" href="css/estilos.css">
+<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>liink para BS5-->
 </head>
 <body>
 
@@ -95,7 +17,7 @@ body {
 
 <!-- Header -->
 <div class="header">
-  <h1>Libros por doquier</h1>
+  <h1>Multiverso Literario</h1>
   <p>El maravilloso mundo de la <b>lectura</b></p>
 </div>
 
@@ -108,7 +30,17 @@ body {
   <a href="#">Contacto</a>
 </div>
 
-<!-- The flexible grid (content) -->
+<!--<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Inicio</a>
+    <a class="navbar-brand" href="#">Reseñas</a>
+    <a class="navbar-brand" href="#">Autores</a>
+    <a class="navbar-brand" href="#">Frases</a>
+    <a class="navbar-brand" href="#">Contacto</a>
+  </div>
+</nav>EN CASO SE DESEE USAR BS5-->
+
+<!--The flexible grid (content) -->
 <div class="row">
   <div class="side">
     <h2>Una pizca de quién soy</h2>
@@ -124,7 +56,9 @@ body {
   <div class="main">
     <h2><i>La ladrona de libros</i></h2>
     <h5>Autor Markus Zusak, Junio 12, 2022</h5>
-    <div class="fakeimg" style="height:200px;"><img src="laLadronaDeLibros.jpg" alt="La ladrona de libros"></div>
+    <div class="fakeimg" >
+      <img src="img/laLadronaDeLibros.jpg" alt="La ladrona de libros">
+    </div>
     <p>La primera peculiaridad de esta novela es su narrador, mejor dicho, su narradora: la Muerte.
       Ella es la que nos cuenta en primera persona la historia de Liessel, una niña alemana que
       descubre durante la segunda guerra mundial el placer de la lectura y el horror de la guerra.
