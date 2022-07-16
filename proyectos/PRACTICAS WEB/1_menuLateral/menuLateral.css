@@ -12,15 +12,55 @@ html{
     border-radius: 0.5rem;
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 0%;
     font-family: sans-serif;
     font-size: 2rem;
     color: black;
     text-align: center;
-    transition: left 0.7s;
+    transition: left 0.9s;
 }
 
 .checkbox:checked ~ .menu{
     left: 40%;
     border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.left-panel{
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(#FFF9CA, #FFDEB4, #FFB4B4);
+    position: absolute;
+    top: 0;
+    display: flex;
+    left: -40%;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.9s;
+}
+
+.checkbox:checked ~ .left-panel{
+    left: 0;
+}
+
+.checkbox{
+    display: none;
+}
+
+ul a{
+    color:#B2A4FF;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0.5rem;
+    margin: 1rem 0;
+}
+
+li:hover{
+    color: white;
+    border: solid white;
+    border-width: 0 0.1rem;
 }
