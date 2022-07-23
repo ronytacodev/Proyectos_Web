@@ -1,35 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap'); */
 
 * {
     box-sizing: border-box;
   }
+
+  :root {
+    --blue: #5ab7f5;
+    --white: #ffffff; 
+    --purple: rgb(208, 162, 214);
+    --black: black;
+
+  }
   
   /* Style the body */
   body {
-    font-family: Gentium PLus;
+    /* font-family: Gentium PLus; */
+    font-family: 'Fauna One', serif;
     margin: 0;
   }
-  
+
+  .marquee{
+    background-color: var(--purple);
+    padding:5px;
+  }
+
+  .marquee marquee{
+    text-align:center;
+    letter-spacing:5px;
+    font-size: 25px;
+  }
+
+  .font-cinzel{
+    font-family: Cinzel, serif;
+    font-size: 46px;  
+  }
+  /* .altura-line{
+    line-height: 0.8;   
+  } */
+
   /* Header/logo Title */
   .header {
     padding: 60px;
     text-align: center;
-    background: #5ab7f5;
-    color: white;
+    background: var(--blue);
+    color: var(--black);
   }
   
   /* Style the top navigation bar */
   .navbar {
     display: flex;
     overflow: hidden;
-    background-color: #333;
+    background-color: var(--black);
     position: sticky;
     top: 0;
   }
   
   /* Style the navigation bar links */
   .navbar a {
-    color: white;
+    color: var(--white);
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
@@ -37,8 +65,11 @@
   
   /* Change color on hover */
   .navbar a:hover {
-    background-color: rgb(190, 228, 253);
-    color: black;
+    /* background-color: rgb(190, 228, 253); */
+    background-color: var(--purple);
+    color: var(--black);
+    opacity: 0.9;
+    font-weight: bold;
   }
   
   /* Column container */
@@ -80,7 +111,8 @@
   .footer {
     padding: 20px;
     text-align: center;
-    background: rgb(208, 211, 250);
+    background: var(--black);
+    color: var(--white);
   }
   
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
