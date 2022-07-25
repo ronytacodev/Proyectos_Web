@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="I help convert a vision and an idea into meaningful and useful products."
+    />
+    <meta
+      property="og:description"
+      content="I help convert a vision and an idea into meaningful and useful products."
+    />
+    <meta property="og:title" content="Diego Briceño | Frontend Developer" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image:secure_url"
+      itemprop="image"
+      content="https://diegobrice.com/assets/thumbnail.png"
+    />
+    <meta property="og:url" content="https://diegobrice.com/" />
+    <meta
+      property="og:site_name"
+      content="Diego Briceño | Frontend Developer"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="apple-touch-icon" href="./assets/logo.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/logo-120x120.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/logo-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/logo-16x16.png"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media.css" media="(max-width: 991px)" />
+    <script
+      src="https://kit.fontawesome.com/7b5fb2de65.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Rony Taco | Frontend Developer</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__logo">
+          <p class="navbar__title">
+            <a href="#">ronytaco</a>
+          </p>
+        </div>
+        <div class="navbar__menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navbar__links">
+          <li class="navbar__link active" data-ref="home">
+            <a href="#home">Home</a>
+          </li>
+          <li class="navbar__link" data-ref="about">
+            <a href="#about">About</a>
+          </li>
+          <li class="navbar__link" data-ref="services">
+            <a href="#services">Services</a>
+          </li>
+          <li class="navbar__link" data-ref="portfolio">
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li class="navbar__link" data-ref="contact">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home" class="home">
+      <div class="home__background"></div>
+      <picture>
+        <source type="image/webp" srcset="./assets/profile.webp" />
+        <source type="image/jpeg" srcset="./assets/profile.jpg" />
+        <img class="home__profile" alt="picture profile" />
+      </picture>
+      <div class="home__description">
+        <span class="home__title--primary">Hello!</span>
+        <h1 class="home__title">I'm Rony Taco.</h1>
+        <span class="home__title--secondary">- Frontend Developer -</span>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <h2 class="section__title">About</h2>
+        <div class="about__grid">
+          <div class="about__description">
+            <h3>Who am I?</h3>
+            <h2>I'm Diego Briceño, a Tech passionate and Web Developer</h2>
+            <p>
+              I am a freelancer based in Lima - Peru and i have been building
+              noteworthy websites for the last year, which comply with the
+              latest design trends. I help convert a vision and an idea into
+              meaningful and useful products.
+            </p>
+            <a
+              class="button--cta"
+              href="./assets/Diego Briceno.pdf"
+              download="Diego Briceño CV"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-file-download"></i>Download CV
+            </a>
+          </div>
+          <div class="about__skills">
+            <div class="skill__title">
+              <h3>My skills:</h3>
+            </div>
+            <div class="skill__item">
+              <i class="fab fa-html5"></i>
+              <div class="skill__name">HTML</div>
+            </div>
+            <div class="skill__item">
+              <i class="fab fa-css3-alt"></i>
+              <div class="skill__name">CSS</div>
+            </div>
+            <div class="skill__item">
+              <i class="fab fa-js"></i>
+              <div class="skill__name">JAVASCRIPT</div>
+            </div>
+            <div class="skill__item">
+              <i class="fab fa-sass"></i>
+              <div class="skill__name">SASS</div>
+            </div>
+            <div class="skill__item">
+              <i class="fab fa-bootstrap"></i>
+              <div class="skill__name">BOOTSTRAP</div>
+            </div>
+            <div class="skill__item">
+              <i class="fab fa-react"></i>
+              <div class="skill__name">REACT</div>
+            </div>
+            <div class="skill__item">
+              <i class="fab fa-git-alt"></i>
+              <div class="skill__name">GIT</div>
+            </div>
+            <div class="skill__item">
+              <i class="fab fa-node"></i>
+              <div class="skill__name">NODE</div>
+            </div>
+            <div class="skill__item">
+              <i class="fas fa-database"></i>
+              <div class="skill__name">MONGODB</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2 class="section__title">Services</h2>
+        <h3 class="section__subtitle">Services I offer to my clients</h3>
+        <div class="services__grid">
+          <div class="services__item">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Fully Responsive</h3>
+            <p>
+              Your site will display properly on any device, including desktop
+              computers, tablets and mobile phones.
+            </p>
+          </div>
+          <div class="services__item">
+            <i class="fas fa-pencil-ruler"></i>
+            <h3>Creative Design</h3>
+            <p>
+              A good and attractive web design helps you keep your leads on your
+              site, which is the digital face of your business.
+            </p>
+          </div>
+          <div class="services__item">
+            <i class="fas fa-code"></i>
+            <h3>Development</h3>
+            <p>
+              I know the importance of web design and can help you create a
+              website you’ll love.
+            </p>
+          </div>
+          <div class="services__item">
+            <i class="fas fa-thumbs-up"></i>
+            <h3>Social Media Integration</h3>
+            <p>
+              There are a lot of social platforms out there, and you should
+              promote your presence on them on your website
+            </p>
+          </div>
+          <div class="services__item">
+            <i class="fas fa-tachometer-alt"></i>
+            <h3>Performance</h3>
+            <p>
+              Retaining users is crucial to improving conversions.
+              High-performing sites engage and retain users
+            </p>
+          </div>
+          <div class="services__item">
+            <i class="fas fa-crosshairs"></i>
+            <h3>SEO</h3>
+            <p>
+              I will optimize your site with intelligent Search Engine
+              Optimization strategy to generate leads.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="section__title">Portfolio</h2>
+        <h3 class="section__subtitle">Showcasing some of my best work</h3>
+        <div class="section__underline"></div>
+        <div class="portfolio__grid">
+          <div class="portfolio__item">
+            <picture>
+              <!-- <source type="image/webp" srcset="./assets/portfolio.webp" /> -->
+              <source type="image/jpeg" srcset="./projects/covid19.png" />
+              <img class="portfolio__img" alt="portfolio item" />
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Covid19 Tracker</h3>
+              <p class="portfolio__description--text">
+                React, Material UI, Chart.js, Rest API
+              </p>
+              <div class="buttons__container">
+                <a
+                  class="button"
+                  href="https://covid19db.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-globe-americas"></i> Website
+                </a>
+                <a
+                  class="button"
+                  href="https://github.com/diegobrice/covid19-tracker-react"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i> Repositorie
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <picture>
+              <!-- <source type="image/webp" srcset="./assets/portfolio.webp" /> -->
+              <source type="image/jpeg" srcset="./projects/todoapp.png" />
+              <img class="portfolio__img" alt="portfolio item" />
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">NotesAPP - MERN</h3>
+              <p class="portfolio__description--text">
+                MongoDB, Express.js, React, Node.js
+              </p>
+              <div class="buttons__container">
+                <a
+                  class="button"
+                  href="https://todoapp-mern.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-globe-americas"></i> Website
+                </a>
+                <a
+                  class="button"
+                  href="https://github.com/diegobrice/MERN-todoapp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i> Repositorie
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <picture>
+              <!-- <source type="image/webp" srcset="./assets/portfolio.webp" /> -->
+              <source type="image/jpeg" srcset="./projects/projects.jpg" />
+              <img class="portfolio__img" alt="portfolio item" />
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">ProjectsApp</h3>
+              <p class="portfolio__description--text">
+                React, Firebase, Bootstrap
+              </p>
+              <div class="buttons__container">
+                <a
+                  class="button"
+                  href="https://projects-react.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-globe-americas"></i> Website
+                </a>
+                <a
+                  class="button"
+                  href="https://github.com/diegobrice/projects-firebase-react"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i> Repositorie
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <picture>
+              <!-- <source type="image/webp" srcset="./assets/portfolio.webp" /> -->
+              <source type="image/jpeg" srcset="./projects/impronte.png" />
+              <img class="portfolio__img" alt="portfolio item" />
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Impronte</h3>
+              <p class="portfolio__description--text">Website: HTML, CSS, JS</p>
+              <div class="buttons__container">
+                <a
+                  class="button"
+                  href="https://diegobrice.github.io/web-impronte-mx/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-globe-americas"></i> Website
+                </a>
+                <a
+                  class="button"
+                  href="https://github.com/diegobrice/web-impronte-mx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i> Repositorie
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <picture>
+              <!-- <source type="image/webp" srcset="./assets/portfolio.webp" /> -->
+              <source type="image/jpeg" srcset="./projects/blognature.png" />
+              <img class="portfolio__img" alt="portfolio item" />
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Blog Nature</h3>
+              <p class="portfolio__description--text">Blog Site: HTML, CSS</p>
+              <div class="buttons__container">
+                <a
+                  class="button"
+                  href="https://diegobrice.github.io/nature-blog/blogs.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-globe-americas"></i> Website
+                </a>
+                <a
+                  class="button"
+                  href="https://github.com/diegobrice/nature-blog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i> Repositorie
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <picture>
+              <!-- <source type="image/webp" srcset="./assets/portfolio.webp" /> -->
+              <source type="image/jpeg" srcset="./projects/pedi2.png" />
+              <img class="portfolio__img" alt="portfolio item" />
+            </picture>
+            <div class="portfolio__description">
+              <h3 class="portfolio__description--title">Pedi2.app</h3>
+              <p class="portfolio__description--text">
+                Landing Page: HTML, CSS, JS
+              </p>
+              <div class="buttons__container">
+                <a
+                  class="button"
+                  href="https://diegobrice.github.io/pedi2-app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-globe-americas"></i> Website
+                </a>
+                <a
+                  class="button"
+                  href="https://github.com/diegobrice/pedi2-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i> Repositorie
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h2 class="section__title">Contact</h2>
+        <h3 class="section__subtitle">
+          Always available for freelance work if the right project comes along.
+          <br />
+          Feel free to contact me!
+        </h3>
+        <div class="contact__grid">
+          <a href="tel:+51-952369305">
+            <div class="contact__item">
+              <i class="fas fa-phone-alt"></i>
+              <p>Phone Me</p>
+            </div>
+          </a>
+          <a
+            href="mailto:diegobricep@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="contact__item">
+              <i class="fas fa-paper-plane"></i>
+              <p>Mail Me</p>
+            </div>
+          </a>
+          <a
+            href="https://wa.me/51952369305?text=Hi%20Diego,%20I%20would%20like%20to%20talk%20about%20a%20project"
+            class="whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="contact__item">
+              <i class="fab fa-whatsapp"></i>
+              <p>Text Me</p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/diegobrice"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="contact__item">
+              <i class="fab fa-github"></i>
+              <p>Follow Me</p>
+            </div>
+          </a>
+          <a
+            href="https://twitter.com/diegobrice"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="contact__item">
+              <i class="fab fa-twitter"></i>
+              <p>Follow Me</p>
+            </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/diegobrice/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="contact__item">
+              <i class="fab fa-linkedin-in"></i>
+              <p>Contact Me</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Copyright © 2020. <a href="#">@diegobrice</a> <br />
+          All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <script async src="./index.js"></script>
+  </body>
+</html>
