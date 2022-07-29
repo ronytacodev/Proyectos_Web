@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --cyan: #00ACC1;
+  --white: #ffffff;
+}
+
 a {
   text-decoration: none;
   color: #f5f5f5;
@@ -21,14 +26,14 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #040402;
+  background: #212121;
   color: #f5f5f5;
 }
 
 section {
   padding: 90px 0;
   text-align: center;
-  background: #040402;
+  background: #212121;
 }
 
 .container {
@@ -62,12 +67,12 @@ section {
 
 .navbar__title::before {
   content: "<";
-  color: #cefe1a;
+  color: var(--cyan);
 }
 
 .navbar__title::after {
   content: "/>";
-  color: #cefe1a;
+  color: var(--cyan);
 }
 
 .navbar__links {
@@ -87,7 +92,7 @@ section {
 }
 
 .navbar__link a:hover {
-  color: #cefe1a;
+  color: var(--cyan);
   transition: color 0.3s;
 }
 
@@ -121,21 +126,23 @@ section {
 
 .home__profile {
   height: 250px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin-right: 40px;
-  filter: grayscale(1);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  filter: grayscale(0);
   transition: filter 0.3s;
 }
 
 .home__profile:hover {
   transition: filter 0.3s;
-  filter: grayscale(0);
+  /* filter: grayscale(0); */
 }
+
 
 .home__title {
   font-size: 60px;
   text-shadow: 1px 1px black;
-  color: #cefe1a;
+  color: var(--cyan);
 }
 
 .home__title--primary,
@@ -157,7 +164,7 @@ section {
   display: block;
   width: 150px;
   height: 5px;
-  background: #cefe1a;
+  background: var(--cyan);
   margin: 10px auto 40px;
 }
 
@@ -238,12 +245,12 @@ section {
 
 .services__item:hover {
   transition: border 0.3s;
-  border-bottom: 5px solid #cefe1a;
+  border-bottom: 5px solid var(--cyan);
 }
 
 .services__item:hover i {
   transition: all 0.3s;
-  color: #cefe1a;
+  color: var(--cyan);
 }
 
 .services__item i {
@@ -312,7 +319,7 @@ section {
 }
 
 .portfolio__description--title {
-  color: #cefe1a;
+  color: var(--cyan);
 }
 
 .portfolio__description--text {
@@ -332,7 +339,7 @@ section {
 }
 
 .button:hover {
-  color: #cefe1a;
+  color: var(--cyan);
 }
 
 
@@ -340,7 +347,7 @@ section {
 
 .button--cta {
 
-  background: #cefe1a;
+  background: var(--cyan);
   color: #191919;
   padding: 5px 30px;
   display: inline-block;
