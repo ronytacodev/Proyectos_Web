@@ -9,6 +9,7 @@ body{
     font-family: 'Roboto', cursive;
 }
 
+/* Agregando estas líneas desde el min 6:17 */
 .contenedor{
     width: 90%;
     max-width: 1000px;
@@ -47,6 +48,10 @@ body{
     /* Aplicamos flexbox para acomodar elementos en el sidebar */
     display: flex;
     align-items: center;
+    /* centrando texto "sidebar" */
+    justify-content: center;
+    /* Ampliando verticalmente el sidebar para que ocupe hasta la parte inferior de la página, pero rozando con el footer */
+    grid-row:  2 / 4; /*o sino también sale con 'grid-row: span 2' */
 }
 
 
