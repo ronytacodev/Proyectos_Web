@@ -50,8 +50,12 @@ body{
     align-items: center;
     /* centrando texto "sidebar" */
     justify-content: center;
+    /* aplicamos min-height para que el sidebar tenga un tamaño mínimo de 100 px cuando haga responsive también */
+    min-height: 100px; 
     /* Ampliando verticalmente el sidebar para que ocupe hasta la parte inferior de la página, pero rozando con el footer */
-    grid-row:  2 / 4; /*o sino también sale con 'grid-row: span 2' */
+    /*grid-row:  2 / 4; o sino también sale con 'grid-row: 2/4 pero la diferencia es que con "2/4" el sidebar queda entre el header y contenido
+    en cambio con "span 2" el sidebar queda entre el contenido y los widgets' */
+    grid-row: span 2;
 }
 
 /* continuando 15:45 aplicando esdtilos a los widgets */
@@ -73,5 +77,18 @@ body{
     color: #fff;
     grid-column: span 3;
 
+}
+
+/* convirtiendo a responsive design con media queries */
+@media screen and (max-width: 768px) {
+    /* aplicando para que contenido ocupe todo el ancho de la pantalla */
+    .contenedor .contenido{
+        grid-column: 1 / -1;
+    }
+    /* aplicando para que el sidebar también ocupe todo el ancho de la pantalla */
+    .contenedor .sidebar {
+        grid-column: 1 / -1;
+    }
+    /* pausamos en 20:08 min */
 }
 
