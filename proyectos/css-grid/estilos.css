@@ -54,4 +54,16 @@ body{
     grid-row:  2 / 4; /*o sino también sale con 'grid-row: span 2' */
 }
 
+/* continuando 15:45 aplicando esdtilos a los widgets */
+.contenedor .widget-1,
+.contenedor .widget-2{
+    background: #55a8fd;
+    color: #fff;
+    height: 100px;
+    text-align: center;
+    /* aplicando flexbox para centrear el texto widget */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
