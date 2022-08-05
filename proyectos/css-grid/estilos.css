@@ -89,6 +89,12 @@ body{
     .contenedor .sidebar {
         grid-column: 1 / -1;
     }
-    /* pausamos en 20:08 min */
+    /* continuamos en 20:08 min */
+    /* aplicando mediaqueries a los widgets */
+    .contenedor .widget-1 {
+        grid-column: span 2;
+    /* hasta el 21:40 min puede quedar ,ya despúes aplicaremos css grid areas */
+    }
+    
 }
 
