@@ -18,6 +18,11 @@ body{
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
+    /* desde el 21:54 min aplicaremos grid-areas*/
+    grid-template-areas: "header      header      header"
+                         "contenido  contenido   sidebar"
+                         "widget-1    widget-2    sidebar"
+                         "footer      footer      footer" ;
 }
 
 .contenedor > div,
@@ -33,12 +38,14 @@ body{
 .contenedor .header {
     background: #12203E;
     color: #fff;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    /* acomodando header con grid-areas */
+    grid-area: header;
+
 }
 
 .contenedor .contenido {
-    grid-column: span 2;
+    /* aplicando grid area al contenido */
+    grid-area: contenido;
 }
 
 .contenedor .sidebar {
@@ -52,10 +59,9 @@ body{
     justify-content: center;
     /* aplicamos min-height para que el sidebar tenga un tamaño mínimo de 100 px cuando haga responsive también */
     min-height: 100px; 
-    /* Ampliando verticalmente el sidebar para que ocupe hasta la parte inferior de la página, pero rozando con el footer */
-    /*grid-row:  2 / 4; o sino también sale con 'grid-row: 2/4 pero la diferencia es que con "2/4" el sidebar queda entre el header y contenido
-    en cambio con "span 2" el sidebar queda entre el contenido y los widgets' */
-    grid-row: span 2;
+    /* aplicando grid area al sidebar */
+    grid-area: sidebar;
+
 }
 
 /* continuando 15:45 aplicando esdtilos a los widgets */
@@ -71,30 +77,21 @@ body{
     justify-content: center;
 }
 
+.contenedor .widget-1 {
+    /* aplicando grid area a widget-1 */
+    grid-area: widget-1;
+}
+
+.contenedor .widget-2{
+    /* aplicando grid area a widget-2 */
+    grid-area: widget-2;
+}
+
 /* aplicando estilos al footer 17:20 min*/
 .contenedor .footer{
     background: #12203e;
     color: #fff;
-    grid-column: span 3;
+    /* aplicando grid area al footer */
+    grid-area: footer;
 
 }
-
-/* convirtiendo a responsive design con media queries */
-@media screen and (max-width: 768px) {
-    /* aplicando para que contenido ocupe todo el ancho de la pantalla */
-    .contenedor .contenido{
-        grid-column: 1 / -1;
-    }
-    /* aplicando para que el sidebar también ocupe todo el ancho de la pantalla */
-    .contenedor .sidebar {
-        grid-column: 1 / -1;
-    }
-    /* continuamos en 20:08 min */
-    /* aplicando mediaqueries a los widgets */
-    .contenedor .widget-1 {
-        grid-column: span 2;
-    /* hasta el 21:40 min puede quedar ,ya despúes aplicaremos css grid areas, para ello duplicaremos el archivo*/
-    }
-    
-}
-
