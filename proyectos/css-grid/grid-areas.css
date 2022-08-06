@@ -95,3 +95,17 @@ body{
     grid-area: footer;
 
 }
+
+/* aplicando media queries desde min 26:25 */
+@media screen and (max-width: 768px){
+    .contenedor {
+        grid-template-areas: "header      header      header"
+                            "contenido  contenido   contenido" /*para que abarque tres filas */
+                            "sidebar     sidebar     sidebar" /*para que abarque tres filas */
+                            "widget-1    widget-1    widget-2"
+                            "footer      footer      footer" ;
+    }
+};
+    
+/* fin de maquetación con css grid  */
+
