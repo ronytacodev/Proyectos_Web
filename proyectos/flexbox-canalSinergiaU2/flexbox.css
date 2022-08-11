@@ -20,6 +20,9 @@ body {
     margin: auto;
     width: 90%;
     max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 /* estilando el header */
@@ -48,4 +51,56 @@ header .menu a {
 /* aplicando hover */
 header .menu a:hover {
     text-decoration: underline;
+}
+
+/*aplicando css al main y el aside 10/08/22*/
+.main {
+    background: #fff;
+    padding: 20px;
+    width: 70%;
+}
+
+/* aplicando css a la imagen con la clase thumb */
+.main article .thumb {
+    margin-bottom: 20px;
+}
+
+.main article .thumb img {
+    width: 100%;
+    vertical-align: top;
+}
+
+/* aplicando css al texto TITULO DEL ARTICULO */
+.main article h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 32px;
+}
+
+/* aplicando css a los parrafos */
+.main article p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+/* aplicando css al aside */
+aside {
+    width: 30%;
+    background: #537dca;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* aplicando css a los anuncios con clase ad */
+aside .ad {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    padding: 50px 0;
+    margin-bottom: 20px;
+    background: #4264a2;
 }
