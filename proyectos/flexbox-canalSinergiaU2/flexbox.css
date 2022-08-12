@@ -128,3 +128,72 @@ footer .redes-sociales a {
 footer .redes-sociales a:hover {
     text-decoration: none;
 }
+
+/* Diseñando una pagina con flexbox - Responsive Design | Curso de CSS desde cero 11/08/22 21:35 hrs */
+@media screen and (max-width:800px) {
+    .main {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    aside .ad {
+        width: 40%;
+    }
+}
+
+/* aplicando media queries hasta una pantalla con un maximo de 640px */
+@media screen and (max-width: 660px) {
+    header {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    header .menu {
+        width: 100%;
+        background: rgba(255, 255, 255, .2);
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* estos estilos mejoran el menu, para que esten mas centrados ya que en la linea 47 se le agregó un margen derecho */
+    header .menu a {
+        margin: 0 20px;
+    }
+
+    header .logo {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* coloca los enlaces de redes sociales por encima de la clase autor */
+    footer .autor {
+        order: 2;
+    }
+
+    footer .redes-sociales {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* aplicando estilos para pantallas con un maximo de 400px */
+@media screen and (max-width:400px) {
+
+    /* quitaremos el aside que contiene los anuncios con la clase ad */
+    aside {
+        display: none;
+    }
+
+    header .menu a {
+        margin: 0 10px;
+    }
+}
