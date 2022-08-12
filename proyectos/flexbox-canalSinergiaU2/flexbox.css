@@ -104,3 +104,27 @@ aside .ad {
     margin-bottom: 20px;
     background: #4264a2;
 }
+
+/* Diseñando una pagina con flexbox - Estilos del Footer | Curso de CSS desde cero 11/08/22 */
+footer {
+    margin: 20px 0;
+    background: rgba(255, 255, 255, .2);
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/* aplicando css a las redes sociales */
+footer .redes-sociales a {
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+footer .redes-sociales a:hover {
+    text-decoration: none;
+}
