@@ -9,16 +9,16 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.nav__container {
+/* .nav__container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
     background-color: #000;
     padding: var(--padding-container);
-}
+} */
 
-.hero {
+/* .hero {
     width: 100%;
     height: 100vh;
     min-height: 600px;
@@ -26,9 +26,9 @@ body {
     position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
-}
+} */
 
-.hero::before {
+/* .hero::before {
     content: "";
     position: absolute;
     top: 0;
@@ -39,7 +39,7 @@ body {
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0% 80%);
     z-index: -1;
-}
+} */
 
 .nav {
     --padding-container: 0;
