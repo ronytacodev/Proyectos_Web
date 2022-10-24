@@ -220,6 +220,17 @@ body {
     --color-items: #696871;
 }
 
+.price__element--best {
+    width: 370px;
+    padding: 60px 40px;
+    background-color: #FF7143;
+    --color-plan: rgb(255 255 255 / 75%);
+    --color-price: #FFF;
+    --bg-cta: #9F3919;
+    --color-cta: #FFF;
+    --color-items: #FFF;
+}
+
 .price__name {
     color: var(--color-plan);
     margin-bottom: 15px;
@@ -234,4 +245,19 @@ body {
 .price__items {
     margin-top: 35px;
     display: grid;
+    gap: 1em;
+    font-weight: 300;
+    margin-bottom: 50px;
+    color: var(--color-items);
+}
+
+.price__cta {
+    background-color: var(--bg-cta);
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--color-cta);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
 }
