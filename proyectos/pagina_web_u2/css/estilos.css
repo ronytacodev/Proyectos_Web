@@ -375,6 +375,7 @@ body {
 .questions__show {
     text-align: left;
     height: 0;
+    transition: height .3s;
 }
 
 .question__img {
