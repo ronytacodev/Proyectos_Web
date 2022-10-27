@@ -305,7 +305,7 @@ body {
     max-width: 700px;
 }
 
-.testimony__cours {
+.testimony__course {
     background-color: royalblue;
     color: #FFF;
     display: inline-block;
@@ -580,5 +580,48 @@ body {
 
     .footer__input {
         flex: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero__title {
+        font-size: 2rem;
+    }
+
+    .hero__paragraph {
+        font-size: 1rem;
+    }
+
+    .subtitle {
+        font-size: 1.8rem;
+    }
+
+    .price__element {
+        width: 90%;
+    }
+
+    .price__element--best {
+        width: 90%;
+    }
+
+    .price__price {
+        font-size: 2rem;
+    }
+
+    .testimony {
+        --padding-container: 60px 0;
+    }
+
+    .testimony__contatiner {
+        grid-template-columns: 28px 1fr 28px;
+        gap: .9em;
+    }
+
+    .testimony__arrow {
+        width: 100%;
+    }
+
+    .testimony__course {
+        margin-top: 15px;
     }
 }
